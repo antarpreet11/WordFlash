@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Card from '../UI/Card'
+import style from './FlashCard.module.css'
 
 const FlashCard = (props) => {
      
@@ -10,10 +10,8 @@ const FlashCard = (props) => {
     }
 
     return (
-        <div onClick={currentFlipHandler}>
-            <Card>
+        <div onClick={currentFlipHandler} className={`${style.card} ${toggle ? '': style.flip}`}>
                 {toggle ? props.l1 : props.l2}         
-            </Card>    
         </div>
     )
 }

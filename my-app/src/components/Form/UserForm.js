@@ -20,6 +20,8 @@ const UserForm = () => {
             lang1: userLang, 
             lang2: newLang
         }
+        setUserLang('');
+        setNewLang('');
         console.log(userData);
     }
 
@@ -27,11 +29,11 @@ const UserForm = () => {
       <form onSubmit = {submitHandler}>
           <div>
             <label>User Language</label>
-            <input type="text" onChange={userLangChangeHandler}></input>
+            <input type="text" onChange={userLangChangeHandler} value={userLang}></input>
           </div>
           <div>
             <label>New Language</label>
-            <input type="text" onChange={newLangChangeHandler}></input>
+            <input type="text" onChange={newLangChangeHandler} value={newLang}></input>
           </div>
           <div>
               <button type='submit'>Sumbit</button>

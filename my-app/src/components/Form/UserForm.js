@@ -34,19 +34,19 @@ const UserForm = () => {
 
     return (
       <form onSubmit = {submitHandler} className={styles.form}>
-          <div>
+          <div className={styles.formdiv}>
             <label>User Language</label>
             <input type="text" onChange={userLangChangeHandler} value={userLang}></input>
           </div>
-          <div>
+          <div className={styles.formdiv}>
             <label>New Language</label>
             <input type="text" onChange={newLangChangeHandler} value={newLang}></input>
           </div>
-          <div>
+          <div className={styles.formdiv}>
             <label>No of words</label>
             <input type="number" onChange={newNumChangeHandler} value={newNum}></input>
           </div>
-          <div>
+          <div className={styles.formdiv}>
               <button type='submit'>Sumbit</button>
           </div>
       </form>

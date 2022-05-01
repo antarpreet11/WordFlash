@@ -1,8 +1,40 @@
 .form {
     border-radius: 10px;
     margin: 20px;
-    display: flex;
     flex-wrap: wrap;
-    text-align: left;
     background-color: rgb(168, 255, 255);
+    display: flex;
+    padding: 15px;
+}
+
+.formdiv {
+    padding: 5px;
+}
+
+.formdiv label {
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+.formdiv input {
+    font: inherit;
+    padding: 0.1rem;
+    border-radius: 6px;
+    width: 10rem;
+    border: 1px solid #ccc;
+    max-width: 100%;
+}
+
+.formdiv button {
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    background-color: #5b5b5b;
+    color: white;
+}
+
+.formdiv button:hover {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+    background-color: #2a2a2a;
+    cursor: pointer;
 }

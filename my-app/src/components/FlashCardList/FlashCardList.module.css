@@ -6,3 +6,8 @@
     border-radius: 10px;
     margin: 20px;
 }
+
+.welcome {
+    padding: 10px;
+    justify-content: center;
+}

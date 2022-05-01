@@ -1,8 +1,11 @@
 import React from "react";
-import FlashCard from "./FlashCard";
+import FlashCard from "../FlashCard/FlashCard";
 import styles from "./FlashCardList.module.css";
 
 const FlashCardList = ({ words }) => {
+
+  const length = words.length;
+  
   return (
     <div className={styles['card-grid']}>
       {words.map((word) => {
@@ -14,6 +17,7 @@ const FlashCardList = ({ words }) => {
           ></FlashCard>
         );
       })}
+      <div className={styles.welcome}>{length === 0 ? 'Welcome!' : ''}</div>
     </div>
   );
 };

@@ -1,0 +1,13 @@
+.card-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    background-color: rgb(168, 255, 255);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.welcome {
+    padding: 10px;
+    justify-content: center;
+}

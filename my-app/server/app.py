@@ -11,9 +11,10 @@ import random
 import googletrans
 from googletrans import Translator
 from flask import Flask,request
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 
 #opening file of most common nouns in the enlgish language and adding them to wordbase list
 noun_file = open("nouns.txt", "r")#open the file in read mode
@@ -64,7 +65,7 @@ def generate_words(lang1,lang2,num):
     #"Answers" are the words the user knows in their native language (lang2)
     #"Words" are the words in the language the user is trying to learn (lang1)
 
-    return {"Word": words,"Answers": answers}
+    return {"Words": words,"Answers": answers}
 
     
 def convert(word_sample,language):

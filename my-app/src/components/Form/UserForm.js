@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './UserForm.module.css'
 
-const UserForm = () => {
+const UserForm = (props) => {
 
     const [userLang, setUserLang] = useState('');
     const [newLang, setNewLang] = useState('');
@@ -24,11 +24,12 @@ const UserForm = () => {
         const userData = {
             lang1: userLang, 
             lang2: newLang,
-            num: newNum
+            word_num: parseInt(newNum)
         }
         setUserLang('');
         setNewLang('');
         setNewNum(0);
+        props.onSubmitUserInput(userData);
         console.log(userData);
     }
 

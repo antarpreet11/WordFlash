@@ -1,17 +1,24 @@
 .card {
-    display: flex;
-    justify-content: center;
-    margin: 25px;
-    align-items: center;
-    border-radius: 6px;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
-    background-color: white;
-    height: 150px;
-    width: 150px;
-    transition: 150ms;
-    transform: rotateY(var(--rotate-y, 0));
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  height: 150px;
+  width: 150px;
+  transition: 500ms;
+  cursor: pointer;
+  transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+    translateY(var(--translate-y, 0));
 }
 
 .card.flip {
-    --rotate-y: 180deg;
+  --rotate-y: 180deg;
+}
+
+.card:hover {
+  --translate-y: -3px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
 }

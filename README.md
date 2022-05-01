@@ -1,4 +1,4 @@
-# [WordFlash](https://devpost.com/software/wordflash)
+# [WordFlash (Creatica2022)](https://devpost.com/software/wordflash)
 **WordFlash provides language enthusiasts the practice they need to improve their language abilities by generating flashcards with words in their language of choice.**
 
 ### Inspiration

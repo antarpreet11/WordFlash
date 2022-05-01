@@ -11,9 +11,10 @@ import random
 import googletrans
 from googletrans import Translator
 from flask import Flask,request
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 
 #opening file of most common nouns in the enlgish language and adding them to wordbase list
 noun_file = open("nouns.txt", "r")#open the file in read mode

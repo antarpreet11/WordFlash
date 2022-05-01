@@ -24,7 +24,7 @@ const UserForm = (props) => {
         const userData = {
             lang1: userLang, 
             lang2: newLang,
-            num: newNum
+            word_num: parseInt(newNum)
         }
         setUserLang('');
         setNewLang('');

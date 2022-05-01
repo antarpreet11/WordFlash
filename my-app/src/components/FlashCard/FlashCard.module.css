@@ -1,14 +1,14 @@
 .card {
   display: flex;
   justify-content: center;
-  margin: 25px;
+  margin: 20px;
   align-items: center;
+  position: relative;
   border-radius: 6px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
   background-color: white;
-  height: 150px;
-  width: 150px;
-  transition: 500ms;
+  height: 125px;
+  transition: 300ms;
   cursor: pointer;
   transform: perspective(1000px) rotateY(var(--rotate-y, 0))
     translateY(var(--translate-y, 0));
@@ -16,6 +16,16 @@
 
 .card.flip {
   --rotate-y: 180deg;
+}
+
+.front,
+.back {
+    position: absolute;
+}
+
+.back {
+    transition: 300ms;
+    transform: rotateY(180deg);
 }
 
 .card:hover {
